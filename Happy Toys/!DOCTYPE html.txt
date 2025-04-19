@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Toys</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 30px;
+        }
+
+        .nav-links a {
+          margin: 0 15px;
+        }
+
+        .cart-icon {
+          width: 30px;
+          height: auto;
+        }
+      }
+      .cart-icon img {
+        width: 24px; /* ubah angka ini kalau kamu mau lebih kecil */
+        height: 24px;
+        cursor: pointer;
+      }
+
+      body {
+        font-family: "Fredoka", sans-serif;
+        background-color: #fff4f7;
+        color: #333;
+      }
+
+      header {
+        background-color: #ff6b81;
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        background-color: #ffb3c6;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffe600;
+      }
+
+      .hero {
+        background-color: #ffe600;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .product-card {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        width: 250px;
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-card img {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      .product-card h3 {
+        margin-top: 15px;
+      }
+
+      .product-card p {
+        color: #666;
+        font-size: 0.9rem;
+        margin: 10px 0;
+      }
+
+      .product-card button {
+        background-color: #ff6b81;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .product-card button:hover {
+        background-color: #ff4757;
+      }
+
+      footer {
+        background-color: #ff6b81;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Happy Toys</h1>
+      <p>Mainan Bahagia untuk Anak Ceria</p>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <div class="nav-spacer"></div>
+        <div class="nav-links">
+          <a href="#">Beranda</a>
+          <a href="#">Produk</a>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Kontak</a>
+        </div>
+        <div class="cart-icon">
+          <img src="img/keranjang.png" alt="Keranjang" />
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h2>Selamat Datang di Happy Toys!</h2>
+      <p>
+        Temukan mainan lucu dan menyenangkan yang bikin hari-harimu penuh tawa!
+      </p>
+    </section>
+    <section class="products">
+      <div class="product-card">
+        <img src="img/boneka_lucu.jpg" alt="Boneka Lucu" />
+        <h3>Boneka Lucu</h3>
+        <p>Boneka lembut dan menggemaskan untuk teman tidur si kecil.</p>
+        <button>Beli Sekarang</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/transformers.jpg" alt="Transformers" />
+        <h3>Robot Mini Transformers</h3>
+        <p>Robot interaktif dengan lampu dan suara seru!</p>
+        <button>Beli Sekarang</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/puzzle_edukasi.jpg" alt="Transformers" />
+        <h3>Puzzle Edukasi</h3>
+        <p>Belajar sambil bermain dengan puzzle warna-warni.</p>
+        <button>Beli Sekarang</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Happy Toys. Semua hak dilindungi.</p>
+    </footer>
+  </body>
+</html>
